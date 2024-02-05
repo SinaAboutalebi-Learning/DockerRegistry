@@ -1,0 +1,42 @@
+2024/02/03 04:13:52 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:13:53 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:13:54 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:13:55 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:13:56 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:13:58 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:14:02 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:14:09 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:14:22 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:14:48 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:15:40 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:16:41 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:17:41 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:18:42 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:19:42 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2024/02/03 04:20:22 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:23 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:24 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:26 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:27 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:29 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:33 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:40 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:20:53 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:2
+2024/02/03 04:21:05 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:07 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:08 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:09 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:10 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:13 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:16 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:23 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:21:36 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:22:02 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:22:54 [emerg] 1#1: host not found in upstream "registry" in /etc/nginx/nginx.conf:29
+2024/02/03 04:24:38 [error] 29#29: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 154.90.52.78, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "116.203.195.82", referrer: "http://116.203.195.82/"
+2024/02/03 04:26:42 [error] 29#29: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 154.90.52.78, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "116.203.195.82", referrer: "http://116.203.195.82/"
+2024/02/03 04:48:53 [error] 29#29: *2 open() "/usr/share/nginx/html/:24231/metrics" failed (2: No such file or directory), client: 154.90.52.78, server: localhost, request: "GET /:24231/metrics HTTP/1.1", host: "116.203.195.82"
+2024/02/03 04:48:53 [error] 29#29: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 154.90.52.78, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "116.203.195.82", referrer: "http://116.203.195.82/:24231/metrics"
+2024/02/03 04:59:53 [error] 29#29: *3 open() "/usr/share/nginx/html/nginx_status" failed (2: No such file or directory), client: 87.107.141.70, server: localhost, request: "GET /nginx_status HTTP/1.1", host: "116.203.195.82"
+2024/02/03 04:59:53 [error] 29#29: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 87.107.141.70, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "116.203.195.82", referrer: "http://116.203.195.82/nginx_status"
+2024/02/03 05:06:41 [error] 22#22: *3 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 154.90.52.78, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "116.203.195.82", referrer: "http://116.203.195.82/nginx_status"
