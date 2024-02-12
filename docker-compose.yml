@@ -3,10 +3,12 @@ version: "3"
 services:
   registry:
     image: registry:2
+    volumes:
+      - ./registry/config.yml:/etc/docker/registry/config.yml:ro
     ports:
       - "5000:5000"
     restart: always
-
+    
   grafana:
     image: grafana/grafana
     environment:
