@@ -5,8 +5,9 @@ services:
     image: registry:2
     volumes:
       - ./registry/config.yml:/etc/docker/registry/config.yml:ro
-    ports:
-      - "5000:5000"
+#    ports:
+#      - "5000:5000"
+    container_name: registry
     restart: always
     
   grafana:
@@ -17,14 +18,16 @@ services:
       - "3000:3000"
     depends_on:
       - prometheus
+    container_name: grafana
     restart: always
 
   prometheus:
     image: prom/prometheus
     volumes:
       - ./prometheus:/etc/prometheus
-    ports:
-      - "9090:9090"
+#    ports:
+#      - "9090:9090"
+    container_name: prometheus
     restart: always
 
   nginx:
@@ -34,7 +37,9 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/logs:/var/log/nginx
+    container_name: nginx-webserver
     restart: always
+
 
   nginx-fluentd:
     build:
@@ -43,22 +48,25 @@ services:
     volumes:
       - ./fluentd:/fluentd/etc
       - ./nginx/logs:/var/log/nginx
-    ports:
-      - "24231:24231"
+#    ports:
+#      - "24231:24231"
+    container_name: nginx-logExporter
     restart: always
 
   registry-exporter:
     build:
       context: ./registry-exporter
       dockerfile: Dockerfile
-    ports:
-      - "9055:9055"
+    container_name: registry-exporter
+#    ports:
+#      - "9055:9055"
     restart: always
 
   nginx-exporter:
     image: nginx/nginx-prometheus-exporter
-    ports:
-      - "9113:9113"
+    container_name: nginx-exporter
+#    ports:
+#      - "9113:9113"
     command:
       - -nginx.scrape-uri
       - http://nginx/nginx_status
